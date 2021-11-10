@@ -56,6 +56,7 @@ namespace SignalRAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddSignalR();
             services.AddDbContext<PostgreSqlDB>();
+            services.AddHttpClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

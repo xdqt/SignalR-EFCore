@@ -9,7 +9,7 @@ namespace ConsoleApp2
     class Program
     {
 
-        public static SignalRConnection connection = new SignalRConnection("http://localhost:7777/chatHub");
+        public static SignalRConnection connection = new SignalRConnection("http://192.168.247.131:32112/chatHub");
         static  void Main(string[] args)
         {
             Task t= connection.connect();

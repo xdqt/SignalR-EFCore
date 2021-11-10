@@ -15,7 +15,7 @@ namespace DBEntity.DBContext
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Host=127.0.0.1;Port=5432;Database=postgres;");
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Host=192.168.101.21;Port=5432;Database=postgres;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
